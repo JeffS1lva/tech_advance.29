@@ -1,0 +1,300 @@
+* {
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --color-text-nav: #faf9f9;
+    --color--text-form: #001252;
+    --color--box-form: #000928;
+    --color--placeholder-text:#1c1c1c;
+    --color--input:#c7c7c7;
+    --color--button:#092b55;
+    --color--b:rgb(8, 218, 241);
+  }
+  body{
+    height: 100vh;
+    background-image: url(pages/src/sl_0210121_40570_43.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  nav {
+    gap: 3rem;
+    display:flex;
+    margin-top:2rem;
+    justify-content:center;
+  }
+  .PgInit a {
+    color: var(--color-text-nav);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family:  'Itim', cursiva;
+    cursor: pointer;
+  }
+  .PgInit a:hover{
+    transform: scale(1.1);
+  }
+  .btn-home {
+    text-decoration: none;
+    color: var(--color-text-nav);
+  }
+  .error {
+    display: none;
+  }
+  .home {
+    text-align: center;
+    margin-top: 15rem;
+  }
+  .home h1{
+    font-size: 4rem;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--color-text-nav);
+    text-transform: uppercase;
+  }
+  .home button {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: .4rem;
+    border: none;
+    background-color: rgb(15, 15, 225);
+    color: var(--color--input);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .home button:hover {
+    background-color:  rgb(58, 58, 204);
+    transition: linear 1s;
+  }
+  .Pg-about {
+    width: 34rem;
+    height: 30rem;
+    background-color: var(--color--button);
+    margin: 5rem auto;
+    border-radius: 1rem;
+  }
+  .Pg-about p{
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem 1rem 1rem 1rem;
+    color: var(--color-text-nav);
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  }
+  .Pg-about b{
+    color: var(--color--b);
+    font-weight: bold;
+  }
+  .Pg-about h1 {
+    color: var(--color-text-nav);
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+  .btn-about {
+    width: 10rem;
+    height: 1.8rem;
+    padding: .4rem;
+    margin: 1.8rem 0rem 1rem 12rem;
+    border: none;
+    border-radius: .5rem;
+    align-items: center;
+    background-color: rgb(15, 15, 225);
+    cursor: pointer;
+  }
+  .btn-about:hover{
+    background-color:  rgb(58, 58, 204);
+  }
+  .btn-about a{
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-text-nav);
+  }
+  .Pg-contact {
+    width: 26rem;
+    height: 30rem;
+    background-color: var(--color--button);
+    margin: 5rem auto;
+    border-radius: 1rem;
+    padding: 0rem 2rem;
+  }
+  .Pg-contact h1{
+    color: var(--color-text-nav);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .Pg-contact .box {
+    display:flex;
+    flex-direction:column;
+    margin:3rem auto;
+    width: 18rem;
+    gap: 1rem;
+  }
+  
+  .Pg-contact .btn-contact {
+    padding: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  .Pg-contact a {
+    display: flex;
+    text-decoration: none;
+    color:black;
+    justify-content:center ;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  .box input {
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none transparent; 
+    color: black;
+    background-color:var(--color--input);
+    border-radius: .6rem;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  .box input::placeholder {
+    color: var(--color--placeholder-text);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    font-weight: 300;
+  }
+  input:focus {
+    outline-color: #f3051d ;
+  }
+  .form .btn-contact {
+    width: 8.0rem;
+    height: 2rem;
+    border: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: .5rem 0rem;
+    text-transform: uppercase;
+    margin-left: 7rem;
+    border-radius: .5rem;
+  }
+  .box-error {
+    text-align: center;
+    width: 43rem;
+    margin:3rem auto;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 3px 3px black;
+    background-color: #a90f0f;
+  }
+  .box-error span {
+    display: flex;
+    font-size: 1.8rem;
+    color: white;
+    padding-top: 2rem;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .box-error h1{
+    font-size:20rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  }
+  .box-error button {
+    width: 8rem;
+    height: 3rem;
+    border-radius: .6rem;
+    border: transparent;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 4px 4px black;
+  }
+  .box-error a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  @media (max-width: 600px) {
+    
+    .PgInit a {
+      font-size: 1.2rem;
+    }
+  
+    nav {
+      margin-top: 1rem;
+    }
+    
+    .Pg-about {
+      width: 23.6rem;
+      margin-top: 8rem;
+    }
+  
+    .Pg-about h1 {
+      padding-top: 2.3rem;
+      font-size: 2rem;
+    }
+  
+    .Pg-about p {
+      font-size: 1.4rem;
+      padding-top: 2rem;
+    }
+  
+    .btn-about {
+      margin: 1rem 7rem;
+    }
+  
+    .Pg-contact {
+      width: 23.4rem;
+    }
+  
+    .form .btn-contact {
+      margin-left: 5.6rem;
+    }
+  
+  
+     
+  }
+  
+  @media (max-width:375px) {
+    .home {
+      margin-top: 12rem;
+    }
+  
+    .Pg-about {
+      width: 22rem;
+      margin-top: 3rem;
+    }
+  
+    .Pg-contact {
+      width: 21rem;
+      height: 70vh;
+      margin-top: 6rem;
+    }
+  
+    .box input {
+      width: 17.3rem;
+    }
+  
+    .Pg-contact h1 {
+      padding-top: 3rem;
+    }
+  
+    .form .btn-contact {
+      margin-left:4.6rem ;
+      margin-bottom: 3rem;
+    }
+  }
+  
